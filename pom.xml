@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.intheeast</groupId>
+  <artifactId>SpringIoCDemos</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <!-- 서로 다른 version 사용 안하고, version을 동일하게 맞춰준다 -->
+  <properties>
+	  <maven.compiler.source>17</maven.compiler.source>
+      <maven.compiler.target>17</maven.compiler.target>
+      <spring.version>6.2.3</spring.version>
+  </properties>
+  
+  <!-- 필요한 lib를 기재하는 곳-->
+  <dependencies>
+  	<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    
+	    <!--https://mvnrepository.com 에서 확인-->
+	    <artifactId>spring-context</artifactId>
+	    
+	    <version>${spring.version}</version> <!-- 나중에 6.2.3으로 치환됨 -->
+	</dependency>
+  </dependencies>
+  
+  <build>
+	    <plugins>
+	        <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-compiler-plugin</artifactId>
+	            <version>3.8.1</version>
+	            <configuration>
+	                <source>${maven.compiler.source}</source>
+	                <target>${maven.compiler.target}</target>
+	            </configuration>
+	        </plugin>
+	    </plugins>
+	</build>
+</project>
