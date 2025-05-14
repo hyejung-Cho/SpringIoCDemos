@@ -5,7 +5,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 import com.chj.IoC.breanoverview.dao.AccountDao;
-import com.chj.IoC.breanoverview.dao.DaoConfig;
 import com.chj.IoC.breanoverview.service.AccountService;
 import com.chj.IoC.breanoverview.service.ClientService;
 import com.chj.IoC.breanoverview.service.impl.ClientServiceImpl;
